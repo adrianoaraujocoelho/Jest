@@ -52,4 +52,15 @@ describe(" Suit Tests exercise day 2", () => {
     //Assert (Verificar as asserções)
     expect(resultReceived).toEqual(expect.arrayContaining(resultExpected));
   });
+
+  it("should return string = not duplicated ", () => {
+    //Arrange (Preparar o teste) Mock
+    var times = ["Flamengo", "Corinthians", "Fluminense", "Palmeiras", "Vasco"];
+    resultExpected = "no duplicates";
+
+    //ACT (Rodar o teste)
+    const resultReceived = fun.hasDuplicates(times);
+    //Assert (Verificar as asserções)
+    expect("no duplicates").toBe(resultExpected);
+  });
 });

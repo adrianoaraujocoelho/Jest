@@ -44,11 +44,8 @@ module.exports = {
         repeatItens.push(prop);
       } else {
         arrayTemp.push(prop);
-        //console.log(prop);
       }
     }
-
-    console.log(repeatItens);
 
     return repeatItens;
   },
