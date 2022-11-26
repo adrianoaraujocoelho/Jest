@@ -11,6 +11,17 @@ summed to 9.
 
 const x = ["1", "3", "5"];
 
+var times = [
+  "Flamengo",
+  "Vasco",
+  "Corinthians",
+  "Fluminense",
+  "Corinthians",
+  "Fluminense",
+  "Palmeiras",
+  "Vasco",
+];
+
 module.exports = {
   convertAdd(x) {
     novo_x = [];
@@ -22,6 +33,24 @@ module.exports = {
       i++;
     });
     return sum;
+  },
+
+  hasDuplicates(arrayParam) {
+    let arrayTemp = [];
+    let repeatItens = [];
+
+    for (let prop of arrayParam) {
+      if (arrayTemp.includes(prop)) {
+        repeatItens.push(prop);
+      } else {
+        arrayTemp.push(prop);
+        //console.log(prop);
+      }
+    }
+
+    console.log(repeatItens);
+
+    return repeatItens;
   },
 };
 
@@ -41,36 +70,5 @@ names = ['Yoda', 'Moses', 'Joshua', 'Mark']
 
 
 
-names = ['applee', 'orange','apple', 'banana','Yoda', 'Moses', 'Joshua', 'Mark']
-
-
-def check_duplicates(names):
-    dup = {x for x in names if names.count(x) > 1 }
-    if dup:
-        return dup 
-    else:
-        return "No duplicates"
-     
-check_duplicates(names)   
 
 */
-var times = [
-  "Flamengo",
-  "Vasco",
-  "Corinthians",
-  "Fluminense",
-  "Corinthians",
-  "Fluminense",
-  "Palmeiras",
-  "Vasco",
-];
-
-function hasDuplicates(times) {
-  var timesDuplicados = [];
-
-  times.forEach((elemento) => {
-    console.log(elemento);
-  });
-}
-
-hasDuplicates(times);

@@ -21,4 +21,35 @@ describe(" Suit Tests exercise day 2", () => {
     //Assert (Verificar as asserções)
     expect(resultReceived).toBe(resultExpected);
   });
+
+  it("should return repeatItens ", () => {
+    //Arrange (Preparar o teste) Mock
+    var times = [
+      "Flamengo",
+      "Vasco",
+      "Corinthians",
+      "Fluminense",
+      "Corinthians",
+      "Fluminense",
+      "Palmeiras",
+      "Vasco",
+    ];
+
+    let arrayTemp = [];
+    let repeatItens = [];
+
+    for (let prop of times) {
+      if (arrayTemp.includes(prop)) {
+        repeatItens.push(prop);
+        resultExpected = repeatItens;
+      } else {
+        arrayTemp.push(prop);
+        resultExpected = "no duplicates";
+      }
+    }
+    //ACT (Rodar o teste)
+    const resultReceived = fun.hasDuplicates(times);
+    //Assert (Verificar as asserções)
+    expect(resultReceived).toEqual(expect.arrayContaining(resultExpected));
+  });
 });
