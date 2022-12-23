@@ -72,11 +72,13 @@ names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"];
 function lowercaseNames(names) {
   nomesMinusculos = [];
   names.forEach(function (item) {
-    if (item[0] != "M" && "R") {
+    if (item[0] == item[0].toLowerCase()) {
       nomesMinusculos.push(item);
     }
   });
-  console.log(nomesMinusculos);
+  console.log(nomesMinusculos.sort());
+
+  return nomesMinusculos.sort();
 }
 
 lowercaseNames(names);
