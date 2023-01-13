@@ -11,7 +11,7 @@ function liquidificadorSucoDeManga(fruta, acucar) {
 describe("Product Suit Tests", () => {
   //scenarios
 
-  it("simple of with create one test", () => {
+  it("example of creating a test", () => {
     //Arrange (Preparar o teste), variaveis, Mocks, spies
     const fruta = "manga";
     const acucar = "acucarcristal";
