@@ -24,6 +24,34 @@ register = {
 function should return the number of students in school. Use the */
 /* students_in_school function you wrote earlier.*/
 
+module.exports = {
+  register_check(register) {
+    numeroDeAlunos = 0;
+
+    Object.values(register).forEach(function (item) {
+      if (item == "yes") {
+        numeroDeAlunos += 1;
+      }
+    });
+
+    //console.log(numeroDeAlunos);
+
+    return numeroDeAlunos;
+  },
+
+  lowercaseNames(names) {
+    nomesMinusculos = [];
+    names.forEach(function (item) {
+      if (item[0] == item[0].toLowerCase()) {
+        nomesMinusculos.push(item);
+      }
+    });
+
+    //console.log(nomesMinusculos.sort());
+
+    return nomesMinusculos.sort();
+  },
+};
 function register_check(register) {
   numeroDeAlunos = 0;
 
@@ -32,7 +60,8 @@ function register_check(register) {
       numeroDeAlunos += 1;
     }
   });
-  console.log(numeroDeAlunos);
+
+  //console.log(numeroDeAlunos);
 
   return numeroDeAlunos;
 }
@@ -76,7 +105,8 @@ function lowercaseNames(names) {
       nomesMinusculos.push(item);
     }
   });
-  console.log(nomesMinusculos.sort());
+
+  //console.log(nomesMinusculos.sort());
 
   return nomesMinusculos.sort();
 }

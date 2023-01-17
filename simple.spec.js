@@ -20,7 +20,6 @@ describe("Product Suit Tests", () => {
     //act (Rodar o teste)
     const resultReceived = liquidificadorSucoDeManga(fruta, acucar);
 
-    //expect(resultReceived).toBe(resultExpected);
     expect(resultReceived).toEqual(resultExpected);
   });
 });

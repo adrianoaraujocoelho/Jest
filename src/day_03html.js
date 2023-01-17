@@ -32,7 +32,7 @@ function register_check(register) {
       numeroDeAlunos += 1;
     }
   });
-  console.log(numeroDeAlunos);
+  //console.log(numeroDeAlunos);
   document.getElementById("alunos").innerHTML = numeroDeAlunos;
   return numeroDeAlunos;
 }
@@ -76,7 +76,7 @@ function lowercaseNames(names) {
       nomesMinusculos.push(item);
     }
   });
-  console.log(nomesMinusculos);
+  //console.log(nomesMinusculos);
 }
 
 lowercaseNames(names);
