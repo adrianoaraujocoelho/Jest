@@ -13,6 +13,8 @@ Escreva uma função chamada register_check que verifica quantos alunos estão n
 
 */
 
+/*
+
 register = {
   Michael: "yes",
   John: "no",
@@ -24,34 +26,8 @@ register = {
 function should return the number of students in school. Use the */
 /* students_in_school function you wrote earlier.*/
 
-module.exports = {
-  register_check(register) {
-    numeroDeAlunos = 0;
+/*
 
-    Object.values(register).forEach(function (item) {
-      if (item == "yes") {
-        numeroDeAlunos += 1;
-      }
-    });
-
-    //console.log(numeroDeAlunos);
-
-    return numeroDeAlunos;
-  },
-
-  lowercaseNames(names) {
-    nomesMinusculos = [];
-    names.forEach(function (item) {
-      if (item[0] == item[0].toLowerCase()) {
-        nomesMinusculos.push(item);
-      }
-    });
-
-    //console.log(nomesMinusculos.sort());
-
-    return nomesMinusculos.sort();
-  },
-};
 function register_check(register) {
   numeroDeAlunos = 0;
 
@@ -67,6 +43,8 @@ function register_check(register) {
 }
 
 register_check(register);
+
+*/
 
 /*
 
@@ -98,7 +76,7 @@ código deve retornar:
 
 names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"];
 
-function lowercaseNames(names) {
+function lowerCaseNames(names) {
   nomesMinusculos = [];
   names.forEach(function (item) {
     if (item[0] == item[0].toLowerCase()) {
@@ -111,4 +89,33 @@ function lowercaseNames(names) {
   return nomesMinusculos.sort();
 }
 
-lowercaseNames(names);
+lowerCaseNames(names);
+
+module.exports = {
+  register_check(register) {
+    numeroDeAlunos = 0;
+
+    Object.values(register).forEach(function (item) {
+      if (item == "yes") {
+        numeroDeAlunos += 1;
+      }
+    });
+
+    //console.log(numeroDeAlunos);
+
+    return numeroDeAlunos;
+  },
+
+  lowerCaseNames(names) {
+    nomesMinusculos = [];
+    names.forEach(function (item) {
+      if (item[0] == item[0].toLowerCase()) {
+        nomesMinusculos.push(item);
+      }
+    });
+
+    //console.log(nomesMinusculos.sort());
+
+    return nomesMinusculos.sort();
+  },
+};
