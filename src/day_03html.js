@@ -76,7 +76,6 @@ function lowercaseNames(names) {
       nomesMinusculos.push(item);
     }
   });
-  //console.log(nomesMinusculos);
 }
 
 lowercaseNames(names);
