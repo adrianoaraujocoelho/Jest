@@ -32,7 +32,7 @@ function register_check(register) {
       numeroDeAlunos += 1;
     }
   });
-  //console.log(numeroDeAlunos);
+
   document.getElementById("alunos").innerHTML = numeroDeAlunos;
   return numeroDeAlunos;
 }

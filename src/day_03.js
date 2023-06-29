@@ -28,26 +28,6 @@ function should return the number of students in school. Use the */
 
 /*
 
-function register_check(register) {
-  numeroDeAlunos = 0;
-
-  Object.values(register).forEach(function (item) {
-    if (item == "yes") {
-      numeroDeAlunos += 1;
-    }
-  });
-
-  //console.log(numeroDeAlunos);
-
-  return numeroDeAlunos;
-}
-
-register_check(register);
-
-*/
-
-/*
-
 <----------------------------------------------------------->
 
 Extra Challenge: Lowercase Names
@@ -83,9 +63,6 @@ function lowerCaseNames(names) {
       nomesMinusculos.push(item);
     }
   });
-
-  //console.log(nomesMinusculos.sort());
-
   return nomesMinusculos.sort();
 }
 
@@ -100,9 +77,6 @@ module.exports = {
         numeroDeAlunos += 1;
       }
     });
-
-    //console.log(numeroDeAlunos);
-
     return numeroDeAlunos;
   },
 
@@ -113,8 +87,6 @@ module.exports = {
         nomesMinusculos.push(item);
       }
     });
-
-    //console.log(nomesMinusculos.sort());
 
     return nomesMinusculos.sort();
   },
