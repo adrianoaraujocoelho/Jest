@@ -8,7 +8,7 @@ class Stack {
   }
   // Push de elementos na pilha
   push(element) {
-    while (element < 3) {
+    while (element < 10) {
       console.log(`o valor de element é: ${element}`);
       this.items[this.count] = element;
       this.count++;
@@ -69,5 +69,5 @@ class Stack {
 const stack = new Stack();
 
 //add elemento
-stack.push(1);
-stack.toString();
+console.log(stack.push(1));
+//stack.toString();
