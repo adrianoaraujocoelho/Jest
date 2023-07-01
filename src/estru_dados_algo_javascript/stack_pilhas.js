@@ -9,11 +9,9 @@ class Stack {
   // Push de elementos na pilha
   push(element) {
     while (element < 10) {
-      console.log(`o valor de element é: ${element}`);
       this.items[this.count] = element;
       this.count++;
       element++;
-      console.log(`o valor de element++ é: ${element}`);
     }
   }
   //verificar o tamanho da estrutura
@@ -66,8 +64,8 @@ class Stack {
   }
 }
 
-const stack = new Stack();
+const novo_obj_stack = new Stack();
 
-//add elemento
-console.log(stack.push(1));
+novo_obj_stack.push(1);
 //stack.toString();
+console.log(novo_obj_stack);
