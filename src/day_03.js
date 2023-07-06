@@ -56,18 +56,6 @@ código deve retornar:
 
 names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"];
 
-function lowerCaseNames(names) {
-  nomesMinusculos = [];
-  names.forEach(function (item) {
-    if (item[0] == item[0].toLowerCase()) {
-      nomesMinusculos.push(item);
-    }
-  });
-  return nomesMinusculos.sort();
-}
-
-lowerCaseNames(names);
-
 module.exports = {
   register_check(register) {
     numeroDeAlunos = 0;
