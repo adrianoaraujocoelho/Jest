@@ -1,5 +1,7 @@
-//Criando uma classe JavaScript stack baseada em objeto.
-//LIFO estrutura de dados de pilha na linguagem Javascript,usando um objeto javascript para armazenar os elementos da pilha
+// Convertendo números decimais para binários
+
+//import { Stack } from "../estru_dados_algo_javascript/stack_pilhas";
+//const Stack = require("./stack_pilhas.js");
 
 export class Stack {
   constructor() {
@@ -64,10 +66,49 @@ export class Stack {
   }
 }
 
-//module.exports = Stack;
+/*
+function decimalToBinary(decNumber) {
+  const remStack = new Stack();
+  let number = decNumber;
+  let rem;
+  let binaryString = "";
 
-const novo_obj_stack = new Stack();
+  while (number > 0) {
+    rem = Math.floor(number % 2);
+    remStack.push(rem);
+    number = Math.floor(number / 2);
+  }
+  while (!remStack.isEmpty()) {
+    binaryString += remStack.pop().toString();
+  }
+  return binaryString;
+}
 
-novo_obj_stack.push(1);
-//stack.toString();
-console.log(novo_obj_stack);
+console.log(decimalToBinary(10));
+//console.log(decimalToBinary(10));
+//console.log(decimalToBinary(1000));
+
+*/
+
+function decimalToBinary(decNumber) {
+  const remStack = new Stack();
+  let number = decNumber;
+  let rem;
+  let binaryString = "";
+
+  while (number > 0) {
+    rem = Math.floor(number % 2);
+    console.log(rem);
+    remStack.push(rem);
+    number = Math.floor(number / 2);
+    console.log(number);
+  }
+
+  while (!remStack.isEmpty()) {
+    binaryString += remStack.pop().toString();
+  }
+
+  return binaryString;
+}
+
+console.log(decimalToBinary(10));
