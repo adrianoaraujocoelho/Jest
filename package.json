@@ -5,7 +5,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "start":"node src/server.js",
+    "test": "npx jest",
+    "secure-mode":"jest --watch verbose=true"
   },
   "keywords": [],
   "author": "",
