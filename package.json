@@ -2,7 +2,7 @@
   "name": "garantindo_a_qualidade_de_seu_codigo",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "npx jest"
